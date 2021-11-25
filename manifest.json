@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3, 
+    "name": "Yellow-background-inator",
+    "description": "Grabs the body tag and makes it #FFFF00",
+    "version": "1.0.0",
+    "icons":{
+        "16": "images/smile.png",
+        "48": "images/smile48image.png",
+        "128": "images/smileface128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "images/smile.png",
+            "48": "images/smile48image.png",
+            "128": "images/smileface128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["style.css"]
+    }]
+
+}
